@@ -1,0 +1,33 @@
+// ПЕРЕМЕННЫЕ utils
+
+@import "./utils/vars";
+
+//   ОБШИЕ СТИЛИ  base ================================
+
+@import "./base/common";
+
+// HEADER'S STYLE ================================
+
+@import "./components/header";
+// STYLES FOR HERO ============================
+@import "./components/hero";
+// SECTION-ADVANTAGES =====================
+
+@import "./components/adantages";
+
+// OUR PROFILE ==========================
+@import "./components/our-profile";
+
+// OUR TEAM =============================
+
+@import "./components/team";
+
+// OUR CLIENTS ======================================
+@import "./components/clients";
+
+// FOOTER =====================================
+@import "./components/footer";
+// PORTFOLIO ===============================
+@import "./components/portfolio";
+// MODAL WINDOW ===============================
+@import "./components/modal";
