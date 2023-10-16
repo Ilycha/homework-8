@@ -92,6 +92,7 @@ li {
 }
 
 .header-mobile {
+  display: none;
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -253,9 +254,6 @@ li {
 }
 .contact-header__item:last-child {
   margin-bottom: 32px;
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: 0.68px;
 }
 @media screen and (min-width: 480px) {
   .contact-header__item:last-child {
@@ -287,6 +285,21 @@ li {
 @media screen and (min-width: 480px) {
   .contact-header__connect {
     padding: 32px 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+}
+
+.contact-header__connect--mobile {
+  color: #2196f3;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+@media screen and (min-width: 480px) {
+  .contact-header__connect--mobile {
+    color: #757575;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
