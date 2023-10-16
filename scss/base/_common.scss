@@ -14,5 +14,9 @@ li {
 .body {
   color: $primary-text-color;
   font-family: $main-font;
-  padding-top: 80px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 80px;
+  }
 }
