@@ -1,5 +1,7 @@
 .clients-section {
   padding: 94px 0;
+
+
 }
 
 .clients-section__title {
@@ -10,6 +12,10 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin: 0 0 50px 0;
+
+   @media screen and (max-width:480px) {
+    width: 480px;
+  }
 }
 
 .clients-section__list {
@@ -17,12 +23,28 @@
   display: flex;
   margin: 0;
   padding: 0;
-}
-.clients-section__item {
-  margin-right: 30px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (max-width:480px){
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    justify-content: center;
+  }
+}
+
+
+.clients-section__item {
+  margin: 0;
+
+  @media screen and (min-width: 480px){
+
+    margin-right: 30px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+
   }
 }
 .clients-section__linc {
@@ -35,6 +57,10 @@
   width: 170px;
   height: 92px;
   transition: $transition;
+
+  @media screen and (max-width){
+    width: 210px;
+  }
 
   .clients-section__icon {
     width: 106px;
