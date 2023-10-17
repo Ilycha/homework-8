@@ -594,6 +594,11 @@ li {
 .team-section__item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 480px) {
+  .team-section__item {
+    margin: 0;
+  }
+}
 
 .team-section__photo {
   display: block;
@@ -696,7 +701,6 @@ li {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 480px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -767,6 +771,12 @@ li {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (max-width: 480px) {
+  .continer-header {
+    display: block;
+    text-align: center;
+  }
+}
 
 .footer__thumb {
   display: -webkit-inline-box;
@@ -780,6 +790,11 @@ li {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-style: normal;
+}
+@media screen and (max-width: 480px) {
+  .footer__thumb {
+    display: block;
+  }
 }
 
 .footer__logo {
@@ -805,6 +820,11 @@ li {
 .footer-adres__thumb {
   width: 231px;
   margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .footer-adres__thumb {
+    margin: 0 auto;
+  }
 }
 
 .futer-adress__text {
@@ -840,6 +860,12 @@ li {
 .footer-sotial {
   margin: 0 0 0 70px;
 }
+@media screen and (max-width: 480px) {
+  .footer-sotial {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
 
 .footer-sotial__title {
   margin: 0 0 20px 0;
@@ -860,6 +886,16 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .footer-sotial__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-sotial__item {
@@ -896,6 +932,11 @@ li {
 
 .follow-footer {
   margin-left: auto;
+}
+@media screen and (max-width: 480px) {
+  .follow-footer {
+    margin-top: 60px;
+  }
 }
 
 .follow-footer__title {
@@ -1011,6 +1052,11 @@ li {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 480px) {
+  .send-button-futer {
+    margin-top: 20px;
+  }
 }
 
 .portfolio {

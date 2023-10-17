@@ -40,6 +40,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media screen and (max-width:480px){
+    margin: 0;
+  }
 }
 .team-section__photo {
   display: block;
