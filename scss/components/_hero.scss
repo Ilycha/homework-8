@@ -28,6 +28,17 @@
   font-weight: 900;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 480px) {
+    max-width: 360px;
+
+    font-size: 26px;
+    margin: 0 auto;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
 }
 
 .hero__button {
@@ -44,4 +55,6 @@
   border: 0;
   margin-top: 30px;
   cursor: pointer;
+
+
 }

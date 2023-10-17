@@ -11,6 +11,12 @@ li {
   padding: 0 15px;
   width: 1200px;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0;
+  }
+}
 
 .body {
   color: #757575;
@@ -348,6 +354,17 @@ li {
   font-weight: 900;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+    font-size: 26px;
+    margin: 0 auto;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
 }
 
 .hero__button {
