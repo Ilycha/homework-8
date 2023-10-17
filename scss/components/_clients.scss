@@ -58,7 +58,7 @@
   height: 92px;
   transition: $transition;
 
-  @media screen and (max-width){
+  @media screen and (max-width:480px){
     width: 210px;
   }
 

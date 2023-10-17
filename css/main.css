@@ -711,7 +711,7 @@ li {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width) {
+@media screen and (max-width: 480px) {
   .clients-section__linc {
     width: 210px;
   }
