@@ -580,6 +580,11 @@ li {
   display: flex;
   list-style: none;
 }
+@media screen and (max-width: 480px) {
+  .team-section__list {
+    display: block;
+  }
+}
 
 .team-section__item {
   margin-right: 30px;
