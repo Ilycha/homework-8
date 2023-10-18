@@ -8,11 +8,18 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1200px;
 
-  @media screen and (max-width:480px){
+  // MOBILE 480+
+  @media screen and (min-width: 480px) {
     width: 480px;
-    margin: 0;
+  }
+  // TABLET 768+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  // DESCTOP 1200+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
