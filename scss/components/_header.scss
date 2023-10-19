@@ -13,7 +13,7 @@
 }
 
 .header__thumb {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     height: 80px;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .header__nav {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -41,15 +41,16 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 480px) {
-    color: #212121;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    font-weight: 700; 
+    letter-spacing: 0.72px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    height: 80px;
+    font-weight: 700; 
+    letter-spacing: 0.72px;
   }
 }
 .header-logo__span {
@@ -57,7 +58,7 @@
 }
 
 .header-mobile {
-  display: none;
+// display: none;
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -67,8 +68,9 @@
   height: 796px;
   padding: 48px 40px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
     width: inherit;
     padding: 0;
 
@@ -81,10 +83,10 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-left: 93px;
+    margin-left: 85px;
   }
 }
 .header-list__item {
@@ -96,7 +98,7 @@
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     margin-right: 50px;
     padding: 0;
     color: $title-text-color;
@@ -119,7 +121,7 @@
   transition: $transition;
   position: relative;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     padding: 32px 0;
   }
 
@@ -145,7 +147,7 @@
 .header-list__linc--current {
   color: $link-color;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     color: $link-color;
 
     &::after {
@@ -169,25 +171,39 @@
   margin-left: auto;
   margin-top: 306px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     margin-top: 0;
   }
+@media screen and (min-width:768px) and (max-width:1199px) {
+  margin-left: 90px;
 }
+
+}
+
+
 
 .contact-header__list {
   list-style: none;
   padding: 0;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  @media screen and (min-width: 480px) {
-    display: flex;
 
-    align-items: center;
+  @media screen and (min-width: 768px) {
+   
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
   }
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    gap: 10px;
+  }
+
 }
 
 .contact-header__item {
@@ -199,7 +215,7 @@
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px){
     &:last-child {
       font-size: 14px;
       font-style: normal;
@@ -207,7 +223,7 @@
       line-height: normal;
       letter-spacing: 0.28px;
       margin-bottom: 0;
-      margin-left: 30px;
+     
     }
   }
 }
@@ -225,12 +241,16 @@
     color: $link-color;
   }
 
-  @media screen and (min-width: 480px) {
-    padding: 32px 0;
+  @media screen and (min-width: 768px) {
 
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+  }
+
+  @media screen and (min-width: 1200px){
+
+    padding: 32px 0;
   }
 }
 
@@ -240,18 +260,25 @@
   font-weight: 500;
   letter-spacing: 0.68px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     color: $primary-text-color;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    
+    
   }
+  @media screen and (min-width: 1200px){
+    margin-left: 30px;
+  
+  }
+
 }
 
 .contact-header__icon {
   display: none;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: block;
     margin: 0;
     padding: 0;
