@@ -1,8 +1,8 @@
 .clients-section {
-  padding: 94px 0;
+  padding: 60px 0;
 
-  @media screen and (max-width:1200px){
-    padding: 60px 0;
+  @media screen and (min-width:1200px){
+    padding: 94px 0;
   }
 }
 
@@ -43,17 +43,15 @@
   width: 170px;
   height: 92px;
   transition: $transition;
-
-  // @media screen and (max-width: 480px) {
-  //   width: 210px;
-  // }
+}
+  
 
   .clients-section__icon {
     width: 106px;
     height: 60px;
     fill: #afb1b8;
     transition: $transition;
-  }
+  
 
   &:hover,
   &:focus,
