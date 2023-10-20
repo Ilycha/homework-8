@@ -31,7 +31,7 @@ li {
   font-family: Roboto, sans-serif;
   padding-top: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .body {
     padding-top: 80px;
   }
@@ -377,24 +377,21 @@ li {
 }
 
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
+  margin: 0 auto;
   color: #fff;
-  text-align: center;
-  font-size: 44px;
+  max-width: 360px;
+  font-size: 26px;
   font-weight: 900;
-  letter-spacing: 2.64px;
+  line-height: 42px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 360px;
-    font-size: 26px;
-    margin: 0 auto;
+    max-width: 696px;
+    font-size: 44px;
     font-weight: 900;
-    line-height: 42px;
-    letter-spacing: 1.56px;
+    letter-spacing: 2.64px;
     text-transform: uppercase;
   }
 }
@@ -1157,6 +1154,20 @@ li {
 
 .portfolio-photo__item {
   display: block;
+  border: 1px solid #eee;
+  border-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-photo__item {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-photo__item {
+    width: 370px;
+    height: auto;
+  }
 }
 
 .portfolio-photo__linc {
@@ -1212,8 +1223,6 @@ li {
 
 .portfolio-photo__thumb {
   padding: 24px 20px;
-  border: 1px solid #eee;
-  border-top: 0;
 }
 
 .portfolio-photo__subtytle {

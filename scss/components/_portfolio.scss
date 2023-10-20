@@ -48,8 +48,23 @@
   justify-content: center;
   gap: 30px;
 }
+
+
 .portfolio-photo__item {
   display: block;
+
+  border: 1px solid #eee;
+  border-top: 0;
+
+  @media screen and (min-width:768px) {
+    width: 354px;
+    height: 440px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 370px;
+    height: auto;
+  }
+
 }
 .portfolio-photo__linc {
   text-decoration: none;
@@ -95,8 +110,8 @@
 }
 .portfolio-photo__thumb {
   padding: 24px 20px;
-  border: 1px solid #eee;
-  border-top: 0;
+  // border: 1px solid #eee;
+  // border-top: 0;
 }
 .portfolio-photo__subtytle {
   margin: 0 0 4px 0;
