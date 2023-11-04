@@ -22,32 +22,30 @@
 
     <header class="header">
       <div class="header__thumb container">
-        
         <a href="./" class="header-logo"
           ><span class="header-logo__span">Web</span>Studio</a
         >
 
-
-        <button class="header-mobileMenu js-open-menu " aria-expanded="false" aria-controls="mobile-menu">
-         <svg width="40px" height="40px">
-          <use href="./images/symbol-defs.svg#icon-burger-menu">
-
-          </use>
-         </svg>
-         </button>
-
-
+        <button
+          class="header-mobileMenu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
 
         <div class="header-mobile js-menu-container" id="mobile-menu">
-
-          <button class="header-mobileMenu header-mobileMenu__close js-close-menu">
+          <button
+            class="header-mobileMenu header-mobileMenu__close js-close-menu"
+          >
             <svg width="40px" height="40px">
               <use href="./images/symbol-defs.svg#icon-close-menu"></use>
             </svg>
           </button>
 
           <nav class="header__nav">
-  
             <ul class="header-list">
               <li class="header-list__item">
                 <a
@@ -57,14 +55,16 @@
                 >
               </li>
               <li class="header-list__item">
-                <a href="./portfolio.html" class="header-list__linc">Портфоліо</a>
+                <a href="./portfolio.html" class="header-list__linc"
+                  >Портфоліо</a
+                >
               </li>
               <li class="header-list__item">
                 <a href="" class="header-list__linc">Контакти</a>
               </li>
             </ul>
           </nav>
-  
+
           <div class="contact-header">
             <ul class="contact-header__list">
               <li class="contact-header__item">
@@ -79,7 +79,10 @@
                 </a>
               </li>
               <li class="contact-header__item">
-                <a href="tel:+380961111111" class="contact-header__connect contact-header__connect--mobile">
+                <a
+                  href="tel:+380961111111"
+                  class="contact-header__connect contact-header__connect--mobile"
+                >
                   <svg class="contact-header__icon" width="16px" height="12px">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                   </svg>
@@ -88,22 +91,43 @@
               </li>
             </ul>
             <ul class="header-mobile__list">
-              <li class="header-mobile__item"><a class="header-mobile__sotail" href="https://www.google.com/"
-                target="_blank">Instagram</a></li>
-              <li class="header-mobile__item"><a class="header-mobile__sotail" href="https://www.google.com/"
-                target="_blank">Twitter</a></li>
-              <li class="header-mobile__item"><a class="header-mobile__sotail" href="https://www.google.com/"
-                target="_blank">Facebook</a></li>
-              <li class="header-mobile__item"><a class="header-mobile__sotail" href="https://www.google.com/"
-                target="_blank">LinkedIn</a></li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
             </ul>
-
           </div>
-          
         </div>
-
       </div>
-    </header> 
+    </header>
 
     <!-- герой ====================================-->
 
@@ -293,14 +317,29 @@
       <!-- OUR TEAM ======================================-->
 
       <section class="team-section">
-       
         <div class="container">
           <h2 class="team-section__title">Наша команда</h2>
 
           <ul class="team-section__list">
             <li class="team-section__item">
-              <img class="team-section__photo" src=./images/imgigor.jpg
-              alt="фото игоря" width="270" />
+
+
+
+
+              <img class="team-section__photo" srcset="
+              ./images/team/mob-igor.jpg 450w, ./images/team/mob-igor@2x.jpg
+              900w, ./images/team/tab-igor.jpg 354w,
+              ./images/team/tab-igor@2x.jpg 708w, ./images/team/desc-igor.jpg
+              270w, ./images/team/desc-igor@2x.jpg 540w "
+              src=./images/imgigor.jpg alt="фото игоря" 
+               sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"/>
+
+
+
+
+
+
+
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-section__text">Product Designer</p>
@@ -364,12 +403,22 @@
             </li>
 
             <li class="team-section__item">
+
+
               <img
                 class="team-section__photo"
+                srcset="
+                 ./images/team/mob-olga.jpg 450w, ./images/team/mob-olga@2x.jpg
+              900w, ./images/team/tab-olga.jpg 354w,
+              ./images/team/tab-olga@2x.jpg 708w, ./images/team/desc-olga.jpg
+              270w, ./images/team/desc-olga@2x.jpg 540w "
                 src="./images/imgolga.jpg"
                 alt="фото ольги"
-                width="270"
+                 sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
               />
+
+
+
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Ольга Рєпіна</h3>
                 <p class="team-section__text">Frontend Developer</p>
@@ -435,9 +484,18 @@
             <li class="team-section__item">
               <img
                 class="team-section__photo"
+
+                 srcset="
+                 ./images/team/mob-mikola.jpg 450w,
+                 ./images/team/mob-mikola@2x.jpg 900w,
+                 ./images/team/tab-mikola.jpg 354w,
+                 ./images/team/tab-mikola@2x.jpg 708w, 
+                 ./images/team/desc-mikola.jpg 270w,
+                 ./images/team/desc-mikola@2x.jpg 540w "
+
                 src="./images/imgmikola.jpg"
                 alt="фото миколи"
-                width="270"
+                  sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
               />
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Микола Тарасов</h3>
@@ -504,9 +562,15 @@
             <li class="team-section__item">
               <img
                 class="team-section__photo"
+                  srcset="
+                 ./images/team/mob-mihailo.jpg 450w, ./images/team/mob-mihailo@2x.jpg
+              900w, ./images/team/tab-mihailo.jpg 354w,
+              ./images/team/tab-mihailo@2x.jpg 708w, ./images/team/desc-mihailo.jpg
+              270w, ./images/team/desc-mihailo@2x.jpg 540w "
+
                 src="./images/imgmihailo.jpg"
                 alt="фото михайла"
-                width="270"
+                 sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
               />
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Михайло Єрмаков</h3>
@@ -741,14 +805,13 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    
-    <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

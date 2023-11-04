@@ -755,10 +755,19 @@ img {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team-section__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section__item {
+    max-width: 270px;
+  }
+}
 
 .team-section__photo {
   display: block;
-  width: 450px;
 }
 
 .team-section__description {
