@@ -25,27 +25,44 @@
         <a href="./" class="header-logo"
           ><span class="header-logo__span">Web</span>Studio</a
         >
-        <div class="header-mobile">
+
+        <button
+          class="header-mobileMenu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
+        <div class="header-mobile js-menu-container" id="mobile-menu">
+          <button
+            class="header-mobileMenu header-mobileMenu__close js-close-menu"
+          >
+            <svg width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
 
           <nav class="header__nav">
-  
             <ul class="header-list">
               <li class="header-list__item">
-                <a
-                  href="./index.html"
-                  class="header-list__linc"
-                  >Студія</a
-                >
+                <a href="./index.html" class="header-list__linc">Студія</a>
               </li>
               <li class="header-list__item">
-                <a href="./portfolio.html" class="header-list__linc header-list__linc--current">Портфоліо</a>
+                <a
+                  href="./portfolio.html"
+                  class="header-list__linc header-list__linc--current"
+                  >Портфоліо</a
+                >
               </li>
               <li class="header-list__item">
                 <a href="" class="header-list__linc">Контакти</a>
               </li>
             </ul>
           </nav>
-  
+
           <div class="contact-header">
             <ul class="contact-header__list">
               <li class="contact-header__item">
@@ -60,7 +77,10 @@
                 </a>
               </li>
               <li class="contact-header__item">
-                <a href="tel:+380961111111" class="contact-header__connect contact-header__connect--mobile">
+                <a
+                  href="tel:+380961111111"
+                  class="contact-header__connect contact-header__connect--mobile"
+                >
                   <svg class="contact-header__icon" width="16px" height="12px">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                   </svg>
@@ -68,12 +88,44 @@
                 >
               </li>
             </ul>
+            <ul class="header-mobile__list">
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="header-mobile__item">
+                <a
+                  class="header-mobile__sotail"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
           </div>
-          
         </div>
-
       </div>
-    </header> 
+    </header>
     <!-- основной контент -->
     <main>
       <section class="portfolio">
@@ -380,5 +432,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
