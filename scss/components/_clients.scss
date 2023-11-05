@@ -1,7 +1,7 @@
 .clients-section {
   padding: 60px 0;
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
 }
@@ -24,22 +24,19 @@
   margin: 0;
   padding: 0;
   gap: 30px;
-
- 
 }
 
 .clients-section__item {
   margin: 0;
   width: 210px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 226px;
   }
- 
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     width: 170px;
   }
-
 }
 .clients-section__linc {
   display: flex;
@@ -50,21 +47,19 @@
   padding: 0;
   height: 92px;
   transition: $transition;
-}
-  
-
-  .clients-section__icon {
-    max-width: 106px;
-    height: 60px;
-    fill: #afb1b8;
-    transition: $transition;
-  
 
   &:hover,
   &:focus,
   &:focus .clients-section__icon,
   &:hover .clients-section__icon {
-    border-color: $link-color;
+    outline-color: $link-color;
     fill: $link-color;
   }
+}
+
+.clients-section__icon {
+  max-width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: $transition;
 }
