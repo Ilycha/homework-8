@@ -1241,8 +1241,13 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .portfolio__listButton {
@@ -1287,9 +1292,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 
@@ -1301,7 +1303,6 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-photo__item {
     width: 354px;
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
