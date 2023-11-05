@@ -147,13 +147,18 @@ img {
 }
 
 .header-mobile {
-  display: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 48px 40px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header-mobile {
@@ -167,11 +172,14 @@ img {
     padding: 0;
     height: 80px;
     position: inherit;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .header-mobile.is-open {
-  display: block;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .header-mobile__list {
