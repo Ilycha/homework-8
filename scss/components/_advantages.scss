@@ -1,7 +1,7 @@
 .advantages {
   padding: 60px 0;
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
 }
@@ -11,13 +11,13 @@
   margin-bottom: 0;
   padding-left: 0;
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
@@ -31,22 +31,20 @@
   &:not(:first-child) {
     margin-top: 30px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       margin: 0;
     }
   }
 
-
   @media screen and (min-width: 768px) {
-     margin: 0;
+    margin: 0;
     max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
     margin: 0;
-   max-width: 270px;
- }
-
+    max-width: 270px;
+  }
 }
 
 .advantages__thumb {
@@ -57,7 +55,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .advantages__icon {
@@ -75,7 +72,7 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
