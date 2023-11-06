@@ -1343,11 +1343,6 @@ img {
   overflow: hidden;
 }
 
-.portfolio-photo__image {
-  max-width: 100%;
-  display: block;
-}
-
 .portfolio-photo__description {
   display: block;
   margin: 0;
@@ -1358,6 +1353,7 @@ img {
   letter-spacing: 0.54px;
   padding: 63px 24px;
   position: absolute;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
