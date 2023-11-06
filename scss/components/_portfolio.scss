@@ -54,6 +54,12 @@
   border: 1px solid #eee;
   border-top: 0;
 
+
+    &:hover,
+  &:focus {
+    box-shadow: $shadow-for-box;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
     // height: 440px;
@@ -68,10 +74,11 @@
   display: block;
   transition: $transition-box-shadow;
 
-  &:hover,
-  &:focus {
-    box-shadow: $shadow-for-box;
-  }
+  // &:hover,
+  // &:focus {
+  //   box-shadow: $shadow-for-box;
+  // }
+
 }
 
 .portfolio-photo__box {
