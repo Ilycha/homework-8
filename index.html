@@ -281,7 +281,7 @@
             <li class="our-profile__item">
               <img
                 class="our-profole__picture"
-                src="./images/img1.jpg"
+                src="./images/photo-profile/img1-min.jpg"
                 alt="процесс работы"
                 width="370"
               />
@@ -292,7 +292,7 @@
             <li class="our-profile__item">
               <img
                 class="our-profole__picture"
-                src="./images/img2.jpg"
+                src="./images/photo-profile/img2-min.jpg"
                 alt="процесс работы"
                 width="370"
               />
@@ -303,7 +303,7 @@
             <li class="our-profile__item">
               <img
                 class="our-profole__picture"
-                src="./images/img3.jpg"
+                src="./images/photo-profile/img3-min.jpg"
                 alt="процесс работы"
                 width="370"
               />
@@ -322,20 +322,33 @@
 
           <ul class="team-section__list">
             <li class="team-section__item">
-              <img
-                class="team-section__photo"
-                srcset="
-                  ./images/team/mob-igor.jpg     450w,
-                  ./images/team/mob-igor@2x.jpg  900w,
-                  ./images/team/tab-igor.jpg     354w,
-                  ./images/team/tab-igor@2x.jpg  708w,
-                  ./images/team/desc-igor.jpg    270w,
-                  ./images/team/desc-igor@2x.jpg 540w
-                "
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./images/team/mob-igor.jpg"
-                alt="фото игоря"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desc-igor.jpg    1x,
+                    ./images/team/desc-igor@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tab-igor.jpg    1x,
+                    ./images/team/tab-igor@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob-igor.jpg    1x,
+                    ./images/team/mob-igor@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mob-igor.jpg" alt="team member" />
+              </picture>
 
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Ігор Дем'яненко</h3>
@@ -400,20 +413,33 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                class="team-section__photo"
-                srcset="
-                  ./images/team/mob-olga.jpg     450w,
-                  ./images/team/mob-olga@2x.jpg  900w,
-                  ./images/team/tab-olga.jpg     354w,
-                  ./images/team/tab-olga@2x.jpg  708w,
-                  ./images/team/desc-olga.jpg    270w,
-                  ./images/team/desc-olga@2x.jpg 540w
-                "
-                src="./images/team/mob-olga.jpg"
-                alt="фото ольги"
-                sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desc-olga.jpg    1x,
+                    ./images/team/desc-olga@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tab-olga.jpg    1x,
+                    ./images/team/tab-olga@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob-olga.jpg    1x,
+                    ./images/team/mob-olga@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mob-olga.jpg" alt="team member" />
+              </picture>
 
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Ольга Рєпіна</h3>
@@ -478,20 +504,34 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                class="team-section__photo"
-                srcset="
-                ./images/team/mob-mikola.jpg     450w,
-                ./images/team/mob-mikola@2x.jpg  900w,
-                ./images/team/tab-mikola.jpg     354w,
-                ./images/team/tab-mikola@2x.jpg  708w,
-                ./images/team/desc-mikola.jpg    270w,
-                ./images/team/desc-mikola@2x.jpg 540w
-                "
-                src="./images/team/mob-mikola.jpg"
-                alt="фото миколи"
-                sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desc-mikola.jpg    1x,
+                    ./images/team/desc-mikola@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tab-mikola.jpg    1x,
+                    ./images/team/tab-mikola@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob-mikola.jpg    1x,
+                    ./images/team/mob-mikola@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mob-mikola.jpg" alt="team member" />
+              </picture>
+
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Микола Тарасов</h3>
                 <p class="team-section__text">Marketing</p>
@@ -555,20 +595,34 @@
             </li>
 
             <li class="team-section__item">
-              <img
-                class="team-section__photo"
-                srcset="
-                  ./images/team/mob-mihailo.jpg     450w,
-                  ./images/team/mob-mihailo@2x.jpg  900w,
-                  ./images/team/tab-mihailo.jpg     354w,
-                  ./images/team/tab-mihailo@2x.jpg  708w,
-                  ./images/team/desc-mihailo.jpg    270w,
-                  ./images/team/desc-mihailo@2x.jpg 540w
-                "
-                src="./images/team/mob-mihailo.jpg "
-                alt="фото михайла"
-                sizes=" (min-width: 1200px) 25vw, (min-width: 768px) 50vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desc-mihailo.jpg    1x,
+                    ./images/team/desc-mihailo@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tab-mihailo.jpg    1x,
+                    ./images/team/tab-mihailo@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob-mihailo.jpg    1x,
+                    ./images/team/mob-mihailo@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mob-mihailo.jpg" alt="team member" />
+              </picture>
+
               <div class="team-section__description">
                 <h3 class="team-section__subtitle">Михайло Єрмаков</h3>
                 <p class="team-section__text">UI Designer</p>
