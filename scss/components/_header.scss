@@ -70,9 +70,10 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  transition: $transition;
 
   &:hover {
-    color: $link-color;
+    fill: $link-color;
   }
 
   @media screen and (min-width: 768px) {
