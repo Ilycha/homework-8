@@ -47,14 +47,10 @@ img {
   border-bottom: 1px solid #eee;
   width: 100%;
   background-color: #ffffff;
-  position: relative;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -65,8 +61,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: relative;
-    width: 100vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -166,17 +160,28 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .header-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: inherit;
     padding: 0;
+    overflow: visible;
     height: 80px;
     position: inherit;
     -webkit-transform: translateY(0);
@@ -229,6 +234,11 @@ img {
   line-height: 22px;
   letter-spacing: 0.36px;
 }
+@media screen and (max-width: 479px) {
+  .header-mobile__sotail {
+    font-size: calc(5px + 1.4583333333vw);
+  }
+}
 
 .header-list {
   margin: 0;
@@ -247,9 +257,9 @@ img {
 }
 
 .header-list__item {
+  font-size: calc(15px + 5.2083333333vw);
   margin-bottom: 32px;
   color: #212121;
-  font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.8px;
   display: block;
@@ -330,18 +340,9 @@ img {
   }
 }
 
-.contact-header {
-  margin-left: auto;
-}
-@media screen and (max-width: 767px) {
-  .contact-header {
-    position: absolute;
-    bottom: 48px;
-  }
-}
 @media screen and (min-width: 768px) {
   .contact-header {
-    margin-top: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -383,7 +384,7 @@ img {
 }
 
 .contact-header__item {
-  font-size: 24px;
+  font-size: calc(14px + 2.0833333333vw);
   font-weight: 500;
   letter-spacing: 0.48px;
 }
@@ -434,7 +435,7 @@ img {
 
 .contact-header__connect--mobile {
   color: #2196f3;
-  font-size: 34px;
+  font-size: calc(10px + 5vw);
   font-weight: 500;
   letter-spacing: 0.68px;
 }
